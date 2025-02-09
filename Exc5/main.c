@@ -26,10 +26,10 @@ int main(int argc, char *argv[]) {
     srand(time(NULL)); 
 
     for(*pI = 0; *pI < MAX; ++*pI) {
-        randomNumber = rand() % 101;
+        randomNumber = rand() % 99 + 1;
         array[*pI] = randomNumber;
     }
-        
+
 
     printf("The value of the address of the array (pointer) is: %p\n", array);
     printf("First integer in the array is (array[0]): %d\n", array[0]);
