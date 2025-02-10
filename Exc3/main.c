@@ -4,7 +4,8 @@ Improvements:-
 
 Questions:-
 
-#define DHTPIN A0 // define temperature pin as A0
+// define temperature pin as A0
+#define DHTPIN A0
 
 int readingTemp; // temp reading from analogRead
 float tempVolt; // set tempVolt to 0 (to measure voltage of temperature from the reading, 5V = 5000mv, 1V approx. 1024mv. readingTemp * (5000 / 1024.0))

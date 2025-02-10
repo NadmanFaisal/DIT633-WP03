@@ -7,13 +7,17 @@ change byte as it doesn't fit C programming
 Questions:-
 
 
+// define DHTPIN as A0
+#define DHTPIN A0
+// define LIGHTPIN as A1
+#define LIGHTPIN A1
 
-#define DHTPIN A0 // define DHTPIN as A0
-#define LIGHTPIN A1 // define LIGHTPIN as A1
-
-#define REDLEDPIN = 9; // define redLEDPin as 9
-#define GREENLEDPIN = 11; // define greenLEDPin as 9
-#define YELLOWLEDPIN = 13;  // define yellowLEDPin as 13
+// define REDLEDPIN as 9
+#define REDLEDPIN 9
+// define greenLEDPin as 9
+#define GREENLEDPIN 11
+// define yellowLEDPin as 13
+#define YELLOWLEDPIN 13
 
 float readingLight = 0.0; // set readingLight to 0 (to read analogRead value)
 float lightValue = 0.0; // set lightValue to 0 (to map lightValue based on reading and specifications)
