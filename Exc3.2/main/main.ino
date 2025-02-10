@@ -35,7 +35,7 @@ void loop()
 {
   key = getKey();
   
-  if(key) {
+  if(key != '\0') {
     Serial.print(key);
     Serial.print("\n");
   
@@ -47,7 +47,7 @@ void loop()
 
 char getKey() 
 {
-  char character;
+  char character = '\0';
 // =============================
   digitalWrite(row1, LOW);
   if(digitalRead(col1) == LOW) {
