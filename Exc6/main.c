@@ -30,14 +30,11 @@ int main(int argc, char *argv[]) {
     char destination[MAX];
     char destination2[MAX];
 
-    FILE *file;
-
-    file = fopen("textfile", "r");
-    if(file == NULL) {    
-        printf("File not found. Provide as input: ");
-        fgets(string, sizeof(string), stdin);
+    if(argc == 2) {    
+        *string = *argv[1];
     } else {
-        fgets(string, sizeof(string), file);
+        printf("Provide as input: ");
+        fgets(string, sizeof(string), stdin);
     }
 
     printf("String is: %s\n", string);

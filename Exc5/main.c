@@ -34,8 +34,8 @@ int main(int argc, char *argv[]) {
     printf("The value of the address of the array (pointer) is: %p\n", array);
     printf("First integer in the array is (array[0]): %d\n", array[0]);
     printf("The last integer in the array is: %d\n", array[MAX - 1]);
-    printf("The size of an integer (number of bytes) is: %zu\n", sizeof(int));
-    printf("The size of the whole array in bytes is: %zu\n", sizeof(array));
+    printf("The size of an integer (number of bytes) is: %ld\n", sizeof(int));
+    printf("The size of the whole array in bytes is: %ld\n", sizeof(array));
 
     printArray(pI, array);
     multiplyArray(pI, array);
