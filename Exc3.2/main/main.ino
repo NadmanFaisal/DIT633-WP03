@@ -24,10 +24,11 @@ void setup ()
   digitalWrite(row3, HIGH);
   digitalWrite(row4, HIGH);
   
-  pinMode(col1, INPUT_PULLUP);
-  pinMode(col2, INPUT_PULLUP);
-  pinMode(col3, INPUT_PULLUP);
-  pinMode(col4, INPUT_PULLUP);
+  pinMode(col1, INPUT);
+  pinMode(col2, INPUT);
+  pinMode(col3, INPUT);
+  pinMode(col4, INPUT);
+  
   
 }
 
