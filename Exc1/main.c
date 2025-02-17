@@ -1,32 +1,30 @@
-#include <stdio.h>
+#define BLINK_PIN 13 //defining pin number for led
+#define BUTTLED_PIN 12 //defining pin number for led
+#define BUTTON_PIN 7 //defining pin number for button
 
-#define BLINK_PIN 13
-#define BUTTLED_PIN 12
-#define BUTTON_PIN 7
+int ON = HIGH; // storing the HIGH value
+int OFF = LOW; // storing the LOW value
 
-int ON = HIGH;
-int OFF = LOW;
-int currentButtonState = OFF;
-
-void setup(){
-  pinMode(BLINK_PIN, OUTPUT);
-  pinMode(BUTTLED_PIN, OUTPUT);
-  pinMode(BUTTON_PIN, INPUT);
+void setup(){ 
+  pinMode(BLINK_PIN, OUTPUT); // initializing pin as output
+  pinMode(BUTTLED_PIN, OUTPUT); // initializing pin as output
+  pinMode(BUTTON_PIN, INPUT); // initializing pin as input
 }
 
 void loop(){
   
-  if (digitalRead(BUTTON_PIN) == ON) {
-    digitalWrite(BUTTLED_PIN, ON);
+  if (digitalRead(BUTTON_PIN) == ON) { // checking if the button is pressed
+    digitalWrite(BUTTLED_PIN, ON); // turning the led ON
   }
   else {
-    digitalWrite(BUTTLED_PIN, OFF);
+    digitalWrite(BUTTLED_PIN, OFF); // turning the led off
   }
- 
-  digitalWrite(BLINK_PIN, ON);
-  delay(1000);
-  digitalWrite(BLINK_PIN, OFF);
-  delay(1000);
+
+  /*This led turns on and off with a delay of 1 second*/
+  digitalWrite(BLINK_PIN, ON); // turning led on
+  delay(1000); // delay 1 second
+  digitalWrite(BLINK_PIN, OFF); // turing led off
+  delay(1000); // delay 1 second
   
 
 }
