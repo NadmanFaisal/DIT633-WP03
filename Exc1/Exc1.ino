@@ -1,3 +1,8 @@
+// (C) Mohamed Taha Jasser, Nadman Faisal, Zahid Hasan, group: 6 (2025)
+// Work package 3
+// Exercise 1
+// Submission code: 482740 (provided by your TA-s)
+
 #define BLINK_PIN 13 //defining pin number for led
 #define BUTTLED_PIN 12 //defining pin number for led
 #define BUTTON_PIN 7 //defining pin number for button

@@ -1,3 +1,8 @@
+// (C) Mohamed Taha Jasser, Nadman Faisal, Zahid Hasan, group: 6 (2025)
+// Work package 3
+// Exercise 3
+// Submission code: 482740 (provided by your TA-s)
+
 #define TEMP_PIN A0 // defining temperature pin
 
 void setup()
