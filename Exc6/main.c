@@ -22,7 +22,7 @@ This method copies a string form the source to the destination.
 Takes in two parameters - pointer to the destination, and pointer 
 to the source from which the string is copied from. 
 */
-void stringCopy(char *destination, char *source) {
+void copyString(char *destination, char *source) {
     int stringLength = getLength(source);               // Length of the source is calculated
 
     for (int i = 0; i <= stringLength; i++) {           // Loops untill and including the end of the string
@@ -57,6 +57,6 @@ int main(int argc, char *argv[]) {
     strcpy(destination, string);                    // Copies the string to destination using 'string' library
     printf("Destination1 is: %s\n", destination);   // Prints the destination to ensure expected outcome
 
-    stringCopy(destination2, string);               // Copies the string to destination2 using new method
+    copyString(destination2, string);               // Copies the string to destination2 using new method
     printf("Destination 2: %s\n", destination2);    // Prints the destination2 to ensure expected outcome
 }
