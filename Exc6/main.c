@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define MAX 21              // Max length of the strings
+#define MAX 22              // Max length of the strings and taking into accunt for space for null terminator and new line character
 
 /*
 This method is responsible for returning the length of a string. 
@@ -46,7 +46,13 @@ int main(int argc, char *argv[]) {
         fgets(string, sizeof(string), stdin);       // Stores the input to the string
     }
 
-    printf("String is: %s\n", string);              // Prints the string
+    if(string[getLength(string)] != '\n' && getLength(string) > 20) {       // Checks whether the string is of correct length by expecting special characters
+                                                                            // at the end of the array
+        printf("Incorrect string length\n");                                // Prompts the error and 
+        return 0;                                                           // stops the program
+    }
+
+    printf("String is: %s\n", string);              // Prints th
 
     strcpy(destination, string);                    // Copies the string to destination using 'string' library
     printf("Destination1 is: %s\n", destination);   // Prints the destination to ensure expected outcome
