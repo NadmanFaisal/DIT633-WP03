@@ -1,3 +1,8 @@
+// (C) Mohamed Taha Jasser, Nadman Faisal, Zahid Hasan, group: 6 (2025)
+// Work package 3
+// Exercise 2
+// Submission code: 482740 (provided by your TA-s)
+
 #define RED_PIN 2 // defining pin for red led
 #define GREEN_PIN 4 // defining pin for green led
 #define YELLOW_PIN 7 // defining pin for yellow led

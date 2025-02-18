@@ -1,3 +1,8 @@
+// (C) Mohamed Taha Jasser, Nadman Faisal, Zahid Hasan, group: 6 (2025)
+// Work package 3
+// Exercise 3.2
+// Submission code: 482740 (provided by your TA-s)
+
 #define ROW1 11 // defining pin for row1
 #define ROW2 10 // defining pin for row2
 #define ROW3 9 // defining pin for row3

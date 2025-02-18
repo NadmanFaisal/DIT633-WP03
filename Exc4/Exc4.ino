@@ -1,3 +1,8 @@
+// (C) Mohamed Taha Jasser, Nadman Faisal, Zahid Hasan, group: 6 (2025)
+// Work package 3
+// Exercise 4
+// Submission code: 482740 (provided by your TA-s)
+
 #include <Keypad.h>               // Keypad library
 
 const byte ROWS = 4;              // 4 bytes for 4 rows
